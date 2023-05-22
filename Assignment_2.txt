@@ -1,0 +1,173 @@
+1.What are the two values of the Boolean data type? How do you write them?
+Ans : True and False
+
+2. What are the three different types of Boolean operators?
+ANs: AND, OR And NOT
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator 
+	and what it evaluate ).
+Ans: 
+		AND Truth Table
+
+		A    B     Y
+		F    F     F
+		F    T     F
+		T    F     F
+		T    T     T
+
+
+		OR Truth Table
+
+		A    B     Y
+		F    F     F
+		F    T     T
+		T    F     T
+		T    T     T
+
+		NOT Truth Table
+		A	Y
+		F	T
+		T	F
+
+
+Q4. What are the values of the following expressions?
+
+	print((5>4) and (3==5))
+	print(not(5>4))
+	print((5>4) or (3==5))
+	print(not(5>4) or (3==5))
+	print((True and True) and (True==False))
+	print((not(False))or(not(True)))
+
+Ans : False
+	False
+	True
+	False
+	False
+	True
+
+
+5. What are the six comparison operators?
+Ans :  ==,
+	 !=, 
+	  <,
+	  >, 
+	 <=, 
+	 >=
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+Ans: == is the equal to operator that compares two values and evaluates to a Boolean, while = is the assignment operator that stores a value in a variable..
+	
+	for example 
+
+	# Equal To Operator
+	if(2==3):
+    		print("True")
+	else:
+    		print("False")
+
+	#Assignment operator
+	c=1 #here we have used assignment operator(=) to assign value of c which is 1
+	print("c =",c)
+
+
+Q7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+    print('eggs') #Block 1
+if spam > 5:
+    print('bacon') #Block 2
+else:
+    print('ham') #Block 3
+    print('spam')
+    print('spam')
+
+Ans: block_1 is print('eggs') 
+	block_2 is print('bacon')
+	block_3 is print('ham')
+   			print('spam')
+    			print('spam')
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+Ans : 
+	spam = int(input("Input a no."))
+	if spam == 1:
+	    print("Hello")
+	elif spam == 2:
+	    print("Howdy")
+	else:
+	    print("Greetings!")
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+Ans:  we will press ctrl+c.
+
+
+10. How can you tell the difference between break and continue?
+Ans: The break statement will move the execution outside and just after a loop. The continue statement will move the execution to the start of the loop.
+
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+Ans: 
+	for i in range(10):
+	    print(i)
+	print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx") 
+	for i in range(0,10):
+	    print(i)
+	print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+	for i in range(0,10,1):
+	    print(i)
+	
+	we will not find any difference in the output but in range(10) tell us that the maximum size of loop is 10 and by default it's start with 0 and it increment with 1
+	and in range(0,10)  they have given the starting and maximum size of loop and as we know that by default it will increment with 1
+	and in range(0,10,1) they have give all the parameters like starting and maximum size and increment value too but they all are same as default value that's why we are not able to see 	any difference in the output
+	
+	0
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	0
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	0
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+Ans
+	#Use of For Loop
+	print("For Loop")
+	for i in range(1,11):
+	    print(i)
+	#Use of While Loop
+	print("While Loop")
+	a =1
+	while a <= 10:
+	    print(a)
+	    a+=1
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+Ans: spam.bacon()
